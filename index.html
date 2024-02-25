@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preload" href="homeBackground.png" as="image">
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="labndingStyle.css">
+</head>
+<body>
+	<div class="fadeInContainer">
+	<div class="logo-container">
+        <img class="logo" src="homeIcon.png" alt="Logo">
+	</div>
+	<h1 class="title">Welcome to Dino Banking!</h1>
+
+	<div class="container">
+		<h1 class="label">Login</h1>
+		<form class="login_form" action="home.html" name="form" onsubmit="return validated()">
+			<div class="font">Username</div>
+			<input autocomplete="off" type="text" name="username">
+			<div id="user_error">Please enter a valid Username</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please enter a valid Password</div>
+			<button type="submit">Login</button>
+		</form>
+	</div>	
+	<div class="register">
+		<a href="register.html">Don't have an account? Register here!</a>
+	</div>
+	<div class="forgot-password">
+		<a href="register.html">Forgot Username / Password?</a>
+    </div>
+	</div>
+	<script src="valid.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preload" href="homeBackground.png" as="image">
+</head>
+
+<link rel="stylesheet" href="settingStyle.css">
+<div class="fadeInContainer">
+    <div class="settingTitle">Settings</div>
+
+    <div class="homeIcon">
+        <a href="home.html"><img class="homeImg" src="homeIcon.png"></a>
+    </div>
+
+    <div class="brightness">Brightness</div>
+    <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+    <div class="color">Color Blindness</div>
+    <div class="tts">Text To Speech</div>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+    
+    <script src="settingLogic.js"></script>
+
+</html>

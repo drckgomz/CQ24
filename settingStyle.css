@@ -1,0 +1,152 @@
+.settingTitle {
+    position: fixed; /* Use fixed to position relative to the viewport */
+    top: 10pt; /* Align with the icons */
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center the title exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150pt;
+    width: auto; /* Auto width to fit content */
+    padding: 0 20pt;
+    border: 5pt solid green;
+    font-size: 40pt;
+}
+
+.homeIcon {
+    position: fixed;
+    height: 100pt;
+    width: 100pt;
+    left: 10pt;
+    top: 10pt;
+    border: 5pt solid green;
+}
+
+.homeImg {
+    height: 100pt;
+    width: 100pt;
+}
+
+.brightness {
+    position: fixed; /* Use fixed to position relative to the viewport */
+    bottom: 350pt; /* Align with the icons */
+    left: 25%; /* Start from the center */
+    transform: translateX(-50%); /* Center the title exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto; /* Auto width to fit content */
+    padding: 0 20pt;
+    border: 5pt solid green;
+    font-size: 40pt;
+
+}
+
+.color {
+    position: fixed; /* Use fixed to position relative to the viewport */
+    bottom: 250pt; /* Align with the icons */
+    left: 25%; /* Start from the center */
+    transform: translateX(-50%); /* Center the title exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto; /* Auto width to fit content */
+    padding: 0 20pt;
+    border: 5pt solid green;
+    font-size: 40pt;
+}
+
+.tts {
+    position: fixed; /* Use fixed to position relative to the viewport */
+    bottom: 150pt; /* Align with the icons */
+    left: 25%; /* Start from the center */
+    transform: translateX(-50%); /* Center the title exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto; /* Auto width to fit content */
+    padding: 0 20pt;
+    border: 5pt solid green;
+    font-size: 40pt;
+}
+.slidecontainer {
+    position: fixed;
+    width: auto; /* Width of the outside container */
+    left: 75%;
+    height: auto;
+    width: 35%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    bottom: 375pt;
+    display: flex;
+
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  html, body {
+    font-family: Arial, Helvetica, sans-serif;
+      height: 100%; /* Ensure the full height is available */
+      margin: 0; /* Remove default margin */
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      background-color: black;
+       background-image: url(homeBackground.png);
+      background-size: cover; /* Cover the entire page */
+       background-position: center; /* Center the background image */
+      background-repeat: no-repeat;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+.fadeInContainer{
+  animation: fadeInAnimation ease-in .62s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;  
+}

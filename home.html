@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preload" href="homeBackground.png" as="image">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>DinoBank</title>
+</head>
+<body>
+<div class="fadeInContainer">
+<div class="index"></div>
+
+<!--<div class="settings">
+    <a href="setting.html"><img class="gear" src="setting.png"></a>
+</div> -->
+<div class="homeIcon">
+    <a href="home.html"><img class="homeImg" src="homeIcon.png"></a>
+</div>
+
+<div class="title">DinoBank</div>
+
+<div class="balance">Net: $1000</div>
+
+<div class="cards-navigation-wrapper">
+    <button class="prevButton" onclick="previousSet()">Prev</button>
+    <div id="cardsContainer" class="cards-container">
+      <!-- Cards will be dynamically inserted here -->
+    </div>
+    <button class="nextButton" onclick="nextSet()">Next</button>
+  </div>
+  
+
+
+<div class="filter">
+    <button onclick="filterAccounts()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#" onclick="filterResults('all')">All</a>
+    <a href="#" onclick="filterResults('credit')">Credit</a>
+    <a href="#" onclick="filterResults('debit')">Debit</a>
+    <!--<a href="#" onclick="filterResults('savings')">Savings</a> -->
+  </div>
+</div>
+
+</div>
+
+</div>
+
+<script src="logic.js"></script>
+</html>

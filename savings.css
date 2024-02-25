@@ -1,0 +1,93 @@
+.title {
+    position: fixed; /* Use fixed to position relative to the viewport */
+    top: 1em; /* Align with the icons */
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center the title exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto; /* Auto width to fit content */
+    padding: 0 20pt; /* Optional: Add padding to ensure it doesn't overlap with icons */
+    font-size: 6em;
+    text-shadow: 0 4pt 8pt black;
+    -webkit-text-stroke: green 2px;
+      color: orange;
+  }
+
+  .homeIcon {
+    position: fixed;
+    height: 100pt;
+    width: 100pt;
+    left: 10pt;
+    top: 10pt;
+}
+
+/* Assuming .homeImg is a child of .homeIcon or another icon */
+.homeImg {
+    height: 100pt;
+    width: 100pt;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  .fadeInContainer{
+    animation: fadeInAnimation ease-in .62s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  
+  
+    }
+
+    body, html {
+        font-family: Arial, Helvetica, sans-serif;
+        height: 100%; /* Ensure the full height is available */
+        margin: 0; /* Remove default margin */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        background-color: black;
+        background-image: url(homeBackground.png);
+        background-size: cover; /* Cover the entire page */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat;
+         /* Just an example background color */ /* Example background */
+    }
+/* Adjusted for balance and graph positioning */
+.content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    width: 100%; /* Take the full width of the container */
+    gap: 20px; /* Space between balance and graph */
+}
+
+.balance {
+    font-size: 3em;
+    text-shadow: 0 4pt 8pt black; 
+    transform: translateX(-220%);
+    font-size: 3em;
+    -webkit-text-stroke: white 1px;
+}
+
+.graph {
+    /* Adjust size as per the actual size of the graph image or as desired */
+    width: 1em; /* Adjust based on content */
+    height: 1em; /* Adjust based on content */
+    align-content: center;
+
+}
+
+.graph img {
+    width: 100%; /* Ensure the image fills the container */
+    max-width: 400px; /* Or as per your design needs */
+    height: auto; /* Maintain aspect ratio */
+}

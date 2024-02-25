@@ -1,0 +1,215 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+    height: 100%; /* Ensure the full height is available */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: black;
+    background-image: url(homeBackground.png);
+    background-size: cover; /* Cover the entire page */
+     background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+     /* Just an example background color */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+/* Settings icon styles */
+.settings {
+    height: 50pt;
+    width: 50pt;
+    position: fixed;
+    right: 10pt;
+    top: 10pt;
+}
+
+/* Assuming .gear is a child of .settings or another icon */
+.gear {
+    height: 50pt;
+    width: 50pt;
+
+}
+
+/* Home icon styles */
+.homeIcon {
+    position: fixed;
+    height: 100pt;
+    width: 100pt;
+    left: 10pt;
+    top: 10pt;
+}
+
+/* Assuming .homeImg is a child of .homeIcon or another icon */
+.homeImg {
+    height: 100pt;
+    width: 100pt;
+
+}
+
+.title {
+  position: fixed; /* Use fixed to position relative to the viewport */
+  top: 1em; /* Align with the icons */
+  left: 50%; /* Start from the center */
+  transform: translateX(-50%); /* Center the title exactly */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto; /* Auto width to fit content */
+  padding: 0 20pt; /* Optional: Add padding to ensure it doesn't overlap with icons */
+  font-size: 6em;
+  text-shadow: 0 4pt 8pt black;
+  -webkit-text-stroke: green 2px;
+    color: orange;
+}
+
+
+.filter {
+    position: fixed; /* Use fixed to position relative to the viewport */
+    bottom: 10pt; /* Align with the icons */
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center the title exactly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto; /* Auto width to fit content */
+    padding: 0 20pt; /* Optional: Add padding to ensure it doesn't overlap with icons */
+}
+
+
+.balance {
+    position: fixed;
+    left: 50%;
+    top: 4em;
+    /* Apply both translations in a single transform for proper centering */
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    padding: 0 20pt;
+    font-size: 4em;
+    text-shadow: 0 4pt 8pt black;
+    -webkit-text-stroke: green 2px;
+    color: orange;
+    
+  }
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4pt 8pt black;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 100%;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    bottom: 1pt;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display:block;
+}
+
+  
+  .card {
+    width: 48%; /* Slightly less than half to fit two per line */
+    margin-bottom: 20px; /* Space between rows */
+    background-color: blueviolet; /* Example styling */
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4pt 8pt black;
+    
+  }
+
+  .card:hover {
+    filter: brightness(90%);
+  }
+  
+  /* Create a wrapper for navigation and cards */
+.cards-navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600pt; /* Adjust based on your layout */
+    height: 280pt;
+    position: relative; /* Allows absolute positioning inside */
+    border: #ddd;
+    transform: translateY(+15%);
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 280pt;
+    width: 600pt; /* Keep your original width */
+    margin: 0 20px; /* Adjust margin to ensure space for buttons */
+    transform: translateY(+15%);
+  }
+  
+  .prevButton, .nextButton {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    box-shadow: 0 4pt 8pt black;
+    transform: translateY(+50%);
+    width: auto;
+    height: auto;
+    /* Positioning if needed, but they are flex items so may not be necessary */
+  }
+  
+  /* Adjust button hover effect */
+  .prevButton:hover, .nextButton:hover {
+    background-color: #2980B9;
+  }
+  
+  .fadeInContainer{
+  animation: fadeInAnimation ease-in .62s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+
+  }
